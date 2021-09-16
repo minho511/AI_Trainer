@@ -11,16 +11,20 @@ detector = pm.poseDetector()
 count = 0
 check = True
 std = False
+# coundDown
+time_s = int(time.time())
 countDown = 5
 check_start = False
+print(countDown)
 
 while True:
     success, img = cap.read()
-    img = detector.findPose(img)
-    if countDown >0:
-        print(countDown)
-        countDown -= 1
-        time.sleep(1)
+    img = detector.findPose(img, draw=False)
+    if countDown > 0:
+        if int(time.time()) > time_s:
+            countDown -= 1
+            print(countDown)
+            time_s = time.time()
     elif not check_start and countDown == 0:
         check_start = True
         print("시작!")

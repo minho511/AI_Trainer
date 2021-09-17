@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff971bf4-21a2-4010-b0dd-0bbff9ae8dfb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/AItrainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/AItrainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AItrainer2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AItrainer2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       <recent name="$PROJECT_DIR$/PoseEstimation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AItrainer (1)">
+  <component name="RunManager" selected="Python.AItrainer2">
     <configuration name="AItrainer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -158,8 +158,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.AItrainer (1)" />
         <item itemvalue="Python.AItrainer2" />
+        <item itemvalue="Python.AItrainer (1)" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.m_protractor" />
         <item itemvalue="Python.AItrainer" />

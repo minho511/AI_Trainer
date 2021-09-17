@@ -56,12 +56,24 @@ while True:
                     std = check
                 cv2.putText(img, str(count), (500, 100), cv2.FONT_HERSHEY_PLAIN, 5,
                             (255, 0, 0), 3)
-            cv2.circle(img, (lmList[16][1], lmList[16][2]), 15, (0, 255, 0), cv2.FILLED)
-            cv2.circle(img, (lmList[12][1], lmList[12][2]), 15, (0, 255, 0), cv2.FILLED)
-            cv2.circle(img, (lmList[11][1], lmList[11][2]), 15, (0, 255, 0), cv2.FILLED)
-            cv2.circle(img, (lmList[15][1], lmList[15][2]), 15, (0, 255, 0), cv2.FILLED)
+            cv2.circle(img, (lmList[16][1], lmList[16][2]), 12, (0, 255, 0), cv2.FILLED)
+            cv2.circle(img, (lmList[12][1], lmList[12][2]), 12, (0, 255, 0), cv2.FILLED)
+            cv2.circle(img, (lmList[11][1], lmList[11][2]), 12, (0, 255, 0), cv2.FILLED)
+            cv2.circle(img, (lmList[15][1], lmList[15][2]), 12, (0, 255, 0), cv2.FILLED)
 
+            cv2.line(img, (lmList[16][1], lmList[16][2]), (lmList[15][1], lmList[15][2]), (0, 255, 0), 2)
+            cv2.line(img, (lmList[11][1], lmList[11][2]), (lmList[12][1], lmList[12][2]), (0, 255, 0), 2)
 
+            # j point  어깨 중심
+            jx = (lmList[16][1]+lmList[15][1])//2
+            jy = (lmList[16][2]+lmList[15][2])//2
+            cv2.circle(img, (jx, jy), 12, (255, 0, 0), cv2.FILLED)
+            # i point  손목 중심
+            ix = (lmList[11][1] + lmList[12][1]) // 2
+            iy = (lmList[11][2] + lmList[12][2]) // 2
+            cv2.circle(img, (ix, iy), 12, (255, 0, 0), cv2.FILLED)
+
+            cv2.line(img, (ix, iy), (jx, jy), (255, 0, 0), 2)
     cv2.imshow("img", img)
     if cv2.waitKey(1) == 27:
         break

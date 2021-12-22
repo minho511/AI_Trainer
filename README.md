@@ -1,5 +1,5 @@
 # AI_Trainer
-mediapipe.pose, OpenCV를 사용하여 팔굽혀펴기, 아령운동의 개수를 세어주는 프로그램을 만든다.
+mediapipe.pose, OpenCV를 사용하여 팔굽혀펴기, 아령운동의 개수를 세어주는 기능을 구현
 ___
 - [mediapipe.pose](https://google.github.io/mediapipe/solutions/pose.html)
 <img src="https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png" width=500>
